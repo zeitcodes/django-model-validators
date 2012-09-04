@@ -30,3 +30,14 @@ from django.db import models
 class MyModel(models.Model):
     even_field = models.IntegerField(validators=[FileTypeValidator(['zip', 'txt', 'pdf'])])
 ```
+
+###NumericRangeValidator
+Ensure the field value falls within the specified range.
+
+```python
+from django.db import models
+from model_validators.validators import NumericRangeValidator
+
+class MyModel(models.Model):
+    rating = models.PositiveIntegerField(validators=[NumbericRangeValidator(1, 10)])
+```
