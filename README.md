@@ -39,5 +39,5 @@ from django.db import models
 from model_validators.validators import NumericRangeValidator
 
 class MyModel(models.Model):
-    rating = models.PositiveIntegerField(validators=[NumbericRangeValidator(1, 10)])
+    rating = models.PositiveIntegerField(validators=[NumericRangeValidator(1, 10)])
 ```
