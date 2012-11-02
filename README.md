@@ -6,7 +6,7 @@ Django model validators adds a few common validators in addition to Django's [bu
 Installation
 ------------
 
-Run `pip install hg+https://bitbucket.org/nextscreenlabs/django-model-validators`
+Run `pip install django-model-validators`
 
 Validators
 ----------
